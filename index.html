@@ -160,7 +160,7 @@
             <div
               class="bg-buttonColor text-primary p-5 sm:w-auto w-11/12 text-center rounded-xl text-lg font-medium font-Inter">
               <i class="fa-solid fa-couch" aria-hidden="true"></i>
-              <span id="available-seat">40</span>
+              <span id="available-seat" class=" text-green-700 text-3xl font-extrabold">40</span>
               <span>Seats</span>
             </div>
           </div>
@@ -234,8 +234,8 @@
           <!-- ROW 01 -->
           <p class="sm:col-span-1 sm:block hidden">A</p>
           <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
-            <button onclick="handleSelectSeat(this)"
-              class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+            <button onclick="handleSelectSeat(this)" 
+              class="sm:col-span-2 btn sm:btn-md btn-lg  hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
               fdprocessedid="zzwkbm">
               A1
             </button>
@@ -495,7 +495,7 @@
               <p class="flex">
                 <span>Seat</span>
                 <span id="total-booked"
-                  class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm">0</span>
+                  class="bg-green-200 w-4 h-4 p-4 text-green-700 font-extrabold flex justify-center items-center  rounded-full text-2xl">0</span>
               </p>
               <span>Class</span>
               <span>Price</span>
@@ -514,16 +514,18 @@
             <!-- coupon field -->
             <div id="show-coupon-price"
               class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-              <input type="text" class="input my-5 w-full input-primary border-primary" name="" id="coupon-field"
-                disabled="" placeholder="have any coupon?" fdprocessedid="di6tz">
-              <button id="coupon-btn" disabled="" class="btn bg-primary">
+              <input type="text" class="input my-5 w-full input-primary border-primary"  name="" id="coupon-field"
+                disabled="" placeholder="have any coupon?" fdprocessedid="di6tz" disabled>
+              <button id="coupon-btn" disabled="" class="btn bg-primary"  disabled>
                 Apply
               </button>
             </div>
             <!-- Grand total -->
-            <div class="text-lg font-semibold flex justify-between">
-              <p>Grand Price</p>
-              <p><span>BDT: </span> <span id="grand-total">****</span></p>
+            <div id="show-discount" class="">
+              <div  class=" text-lg font-semibold flex justify-between">
+                <p>Grand Price</p>
+                <p><span>BDT: </span> <span id="grand-total">****</span></p>
+              </div>
             </div>
           </div>
           <!-- form section -->
