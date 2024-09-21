@@ -18,8 +18,14 @@ function handleSelectSeat(e) {
    // remove default Text
      defaultText.classList.add('hidden')
 
-    //  
-    selectedSeats.push(e.innerText)
+    //  let selectedSeats = []
+    if(selectedSeats.includes(e.innerText)){
+        alert("Already Booked!");
+        return;
+    }else{
+        selectedSeats.push(e.innerText)
+    }
+    
 
     if(selectedSeats.length > 4){
         alert("You can not get more seats");
