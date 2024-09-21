@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection & Booking Form</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <!-- Main Container -->
+    <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden p-6">
+        <!-- Grid Layout for Seats and Form -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Seat Selection Section (Left) -->
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-700">Select Your Seat</h2>
+
+                <!-- Seat Legend -->
+                <div class="flex items-center gap-4">
+                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                    <span class="text-gray-600">Available</span>
+                    <div class="w-6 h-6 bg-yellow-500 rounded"></div>
+                    <span class="text-gray-600">Selected</span>
+                </div>
+
+                <!-- Seat Grid -->
+                <div class="grid grid-cols-5 gap-4 mt-4">
+                    <!-- Driver Icon (Top Right Corner) -->
+                    <div class="col-span-5 flex justify-end">
+                        <span class="text-dark"><i class="fa-solid fa-regular fa-steering-wheel"></i> Driver</span>
+                    </div>
+
+                    <!-- Seat Layout: Rows A to J (40 Seats) -->
+                    <!-- Row A -->
+                    <div class="flex justify-center">A</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">A1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">A2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">A3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">A4</button>
+
+                    <!-- Row B -->
+                    <div class="flex justify-center">B</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">B1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">B2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">B3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">B4</button>
+
+                    <!-- Row C -->
+                    <div class="flex justify-center">C</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">C1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">C2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">C3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">C4</button>
+
+                    <!-- Row D -->
+                    <div class="flex justify-center">D</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">D1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">D2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">D3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">D4</button>
+
+                    <!-- Row E -->
+                    <div class="flex justify-center">E</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">E1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">E2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">E3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">E4</button>
+
+                    <!-- Row F -->
+                    <div class="flex justify-center">F</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">F1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">F2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">F3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">F4</button>
+
+                    <!-- Row G -->
+                    <div class="flex justify-center">G</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">G1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">G2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">G3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">G4</button>
+
+                    <!-- Row H -->
+                    <div class="flex justify-center">H</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">H1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">H2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">H3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">H4</button>
+
+                    <!-- Row I -->
+                    <div class="flex justify-center">I</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">I1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">I2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">I3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">I4</button>
+
+                    <!-- Row J -->
+                    <div class="flex justify-center">J</div>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">J1</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">J2</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">J3</button>
+                    <button onclick="selectSeat(this)" class="w-10 h-10 bg-green-500 rounded">J4</button>
+                </div>
+            </div>
+
+            <!-- Booking Form Section (Right) -->
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-gray-700">Booking Form</h2>
+
+                <!-- Total Price -->
+                <div class="flex justify-between items-center text-gray-700">
+                    <span><strong>Total Price:</strong></span>
+                    <span id="totalPrice" class="font-bold text-lg">0 Taka</span>
+                </div>
+                   <!-- Selected Seats Info -->
+                   <div id="selectedSeats" class="mt-6 text-gray-700">
+                    <p><strong>Selected Seat(s):</strong> None</p>
+                    <p><strong>Total Price:</strong> 0 Taka</p>
+                </div>
+                <!-- Booking Form -->
+                <form class="space-y-4">
+                    <!-- Name Input -->
+                    <div>
+                        <label class="block text-gray-600" for="full-name">Full Name</label>
+                        <input type="text" id="full-name" class="w-full p-2 border border-gray-300 rounded mt-1"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Phone Input -->
+                    <div>
+                        <label class="block text-gray-600" for="phone">Phone</label>
+                        <input type="text" id="phone" class="w-full p-2 border border-gray-300 rounded mt-1"
+                            placeholder="Enter your phone number" required>
+
+
+                    </div>
+
+                    <!-- Class Selection -->
+                    <div>
+                        <label class="block text-gray-600" for="class">Class</label>
+                        <select id="class" class="w-full p-2 border border-gray-300 rounded mt-1">
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+
+                    <!-- Apply Button -->
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                        Apply
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic for Seat Selection -->
+    <script>
+        let selectedSeats = [];
+        let seatPrice = 550; // Price per seat in Taka
+        const totalPriceElement = document.getElementById('totalPrice');
+        const selectedSeatsElement = document.getElementById('selectedSeats');
+
+        function selectSeat(button) {
+            const seatNumber = button.textContent;
+
+            // Toggle seat selection
+            if (selectedSeats.includes(seatNumber)) {
+                // Deselect seat
+                selectedSeats = selectedSeats.filter(seat => seat !== seatNumber);
+                button.classList.remove('bg-yellow-500');
+                button.classList.add('bg-green-500');
+            } else {
+                // Select seat
+                selectedSeats.push(seatNumber);
+                button.classList.remove('bg-green-500');
+                button.classList.add('bg-yellow-500');
+            }
+
+            // Update the total price and selected seats info
+            updateSeatInfo();
+        }
+
+        function updateSeatInfo() {
+            const total = selectedSeats.length * seatPrice;
+            selectedSeatsElement.innerHTML = `
+<p><strong>Selected Seat(s):</strong> ${selectedSeats.length > 0 ? selectedSeats.join(', ') : 'None'}</p>
+<p><strong>Total Price:</strong> ${total} Taka</p>
+`;
+            totalPriceElement.textContent = `${total} Taka`;
+        }
+    </script>
+</body>
+
+</html>
